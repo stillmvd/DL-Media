@@ -1,18 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: OpenSans;
-}
-
-.container{
-    width: 92%;
-    margin: auto;
-}
-
-::selection{
-    background: #75b9f1;
-}
-
+/* ----------  щрифты  ---------- */
 @font-face {
     font-family: OpenSans;
     src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
@@ -29,6 +15,21 @@
     font-family: OpenSans;
     src: url(/fonts/OpenSans/OpenSans-Bold.ttf);
     font-weight: 600;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: OpenSans;
+}
+
+.container{
+    width: 92%;
+    margin: auto;
+}
+
+::selection{
+    background: #75b9f1;
 }
 
 header{
@@ -67,6 +68,25 @@ body{
 .tossing{
     user-select: none;
     -webkit-user-drag: none;
+}
+
+.burger::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 60px;
+    background-color: #40434C;
+}
+
+.burger::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 60px;
+    background-color: #40434C;
+    margin-bottom: 6px;
 }
 
 /* ----------  события мыши  ---------- */
