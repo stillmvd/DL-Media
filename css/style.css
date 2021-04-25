@@ -1,4 +1,5 @@
 /* ----------  щрифты  ---------- */
+
 @font-face {
     font-family: OpenSans;
     src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
@@ -16,6 +17,8 @@
     src: url(/fonts/OpenSans/OpenSans-Bold.ttf);
     font-weight: 600;
 }
+
+/* ----------  основа  ---------- */
 
 *{
     margin: 0px;
@@ -57,11 +60,14 @@ body{
     flex-direction: column;
 }
 
+.content p{
+    margin-bottom: 280px;
+}
+
 .mainTxt{
     font-weight: 500;
     font-size: 48px;
     color: #40434C;
-    padding-bottom: 280px;
     text-align: center;
 }
 
@@ -89,15 +95,66 @@ body{
     margin-bottom: 6px;
 }
 
+.activites{
+    margin-top: 150px;
+}
+
+.activites .mainTxt{
+    margin-bottom: 150px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    padding: 30px;
+    margin-bottom: 50px;
+    transition: .1s;
+}
+
+.activity img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: .1s;
+}
+
+.activity p{
+    font-size: 36px;
+    color: #40434C;
+}
+
 /* ----------  события мыши  ---------- */
 
-
+.activity:hover{
+    box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
+    cursor: pointer;
+    transform: translateY(-3px);
+}
 
 /* ----------  медиа запросы  ---------- */
 
 @media screen and (max-width: 1440px){
     .mainTxt{
         font-size: 40px;
+    }
+
+    .activity p{
+        font-size: 30px;
+    }
+
+    .activity img{
+        width: 130px;
+        height: 130px;
     }
 }
 
@@ -110,11 +167,29 @@ body{
         width: 34px;
         height: 34;
     }
+
+    .activity p{
+        font-size: 20px;
+    }
+
+    .activity img{
+        width: 110px;
+        height: 110px;
+    }
 }
 
 @media screen and (max-width: 530px){
     .mainTxt{
         font-size: 22px;
+    }
+
+    .activity p{
+        font-size: 11px;
+    }
+
+    .activity img{
+        width: 80px;
+        height: 80px;
     }
 
     .tossing{
