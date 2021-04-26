@@ -1,6 +1,8 @@
 .tossing{
 	animation-name: tossing;
+
 	animation-duration: 2s;	
+
 	animation-iteration-count: infinite;
 }
 
