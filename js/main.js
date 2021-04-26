@@ -1,4 +1,5 @@
 let mouseCursor = document.getElementById('cursor')
+let links = document.querySelectorAll('a')
 
 window.addEventListener('mousemove', e =>{
 
@@ -20,4 +21,15 @@ window.addEventListener('mouseup', e => {
     mouseCursor.style.height = '50px'
     
 })
+
+for (let i =0; i < links.length; i++){
+    links[i].addEventListener('mouseover', e => {
+        mouseCursor.style.width = '70px'
+        mouseCursor.style.height = '70px'
+    })
+    links[i].addEventListener('mouseout', e => {
+        mouseCursor.style.width = '50px'
+        mouseCursor.style.height = '50px'
+    })
+}
 

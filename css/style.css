@@ -28,7 +28,7 @@
 }
 
 .container{
-    width: 92%;
+    width: 1800px;
     margin: auto;
 }
 
@@ -104,7 +104,7 @@ body{
     margin-bottom: 150px;
 }
 
-.items{
+.actBlocks{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,15 +128,15 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 24px;
-    width: 450px;
-    padding: 30px;
+    width: 420px;
+    padding: 60px 20px;
     margin-bottom: 50px;
-    transition: .1s;
+    transition: .1s ease-in;
 }
 
 .activity img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 15px;
     transition: .1s;
 }
@@ -147,16 +147,16 @@ body{
 }
 
 #cursor{
-    transition: .1s;
     position: absolute;
-    border-radius: 100%;
-    user-select: none;
-    pointer-events: none;
     width: 50px;
     height: 50px;
-    border: 1px solid #383838;
-    background-color: rgba(145, 145, 145, 0.3);
-    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+    transition: .1s;
+    background-color: rgba(0,0,0,.2);
+    border: .5px solid black;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
     z-index: 100;
 }
 
@@ -164,7 +164,6 @@ body{
 
 .activity:hover{
     box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
-    cursor: pointer;
     transform: translateY(-3px);
 }
 
