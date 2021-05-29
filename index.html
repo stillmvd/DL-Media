@@ -2,65 +2,63 @@
 <html lang = 'en'>
 <head>
     <meta charset = 'UTF-8'>
-    <meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
     <meta name = 'viewport' content = 'width=device-width, initial-scale = 1.0'>
     <title>DL Media</title>
-    <link rel = 'stylesheet' href = '/css/style.css'>
-    <link rel = 'stylesheet' href = '/css/animation.css'>
+    <link rel = 'stylesheet' href = 'css/style.css'>
+    <link rel = 'stylesheet' href = 'css/animations.css'>
+    <link rel = 'icon' href = '/favicon.ico' type = 'image/x-icon'>
 </head>
-<header class = 'container'>
-    <div class = 'nav'>
-        <a href = '/index.html'>
-            <img src = '/img/logo.svg' alt = 'logo'>
-        </a>
-        <a href = '' class = 'burger'></a>
-    </div>
-</header>
 <body>
-    <div class = 'content container'>
+    <header>
+        <a href = 'index.html'>
+            <img src = 'img/logo.svg' alt = 'logo'>
+        </a>
+        <p href = '' class = 'burger'>
+            
+        </p>
+    </header>
+    <div class = 'bodyContent'>
         <p class = 'mainTxt'>Ищете, где заказать рекламу? <br> Всегда рады Вам помочь!</p>
-        <img src = '/img/arrow.svg' alt = 'trouble' class = 'tossing'>
-    </div>
-    <div class = 'activites container'>
-        <p class = 'mainTxt'>Чем мы занимаемся?</p>
-        <div class = 'actBlocks'>
-            <div class = 'activity1'>
-                <div class = 'activity'>
-                    <img src = '/img/tv.png' alt = 'tv'>
+        <img src = 'img/arrow.svg' alt = 'trouble' class = 'animate__animated sliding arrow'>
+        <div class = 'activities'>
+            <p class = 'mainTxt1'>Чем мы занимаемся?</p>
+            <div class = 'activityBlock1'>
+                <div class = 'activity1' onclick = 'showInfo()'>
+                    <img src = 'img/tv.png' alt = 'tv'>
                     <p>Реклама на TV</p>
                 </div>
-                <div class = 'activity'>
-                    <img src = '/img/outside.png' alt = 'outside'>
+                <div class = 'activity1' onclick = 'showInfo()'>
+                    <img src = 'img/outside.png' alt = 'outside'>
                     <p>Наружная реклама</p>
                 </div>
-                <div class = 'activity'>
-                    <img src = '/img/radio.png' alt = 'radio'>
+                <div class = 'activity1' onclick = 'showInfo()'>
+                    <img src = 'img/radio.png' alt = 'radio'>
                     <p>Реклама на радио</p>
                 </div>
-                <div class = 'activity'>
-                    <img src = '/img/paper.png' alt = 'newspaper'>
+                <div class = 'activity1' onclick = 'showInfo()'>
+                    <img src = 'img/paper.png' alt = 'newspaper'>
                     <p>Реклама в прессе</p>
                 </div>
             </div>
-            <div class = 'activity2'>
-                <div class = 'activity'>
-                    <img src = '/img/internet.png' alt = 'internet'>
+            <div class = 'activityBlock2'>
+                <div class = 'activity2' onclick = 'showInfo()'>
+                    <img src = 'img/internet.png' alt = 'internet'>
                     <p>Реклама в интернете</p>
                 </div>
-                <div class = 'activity'>
-                    <img src = '/img/web.png' alt = 'site'>
+                <div class = 'activity2' onclick = 'showInfo()'>
+                    <img src = 'img/web.png' alt = 'site'>
                     <p>Создание сайтов</p>
                 </div>
-                <div class = 'activity'>
-                    <img src = '/img/sign.png' alt = 'sign'>
+                <div class = 'activity2' onclick = 'showInfo()'>
+                    <img src = 'img/sign.png' alt = 'sign'>
                     <p>Изготовление вывесок</p>
                 </div>
             </div>
         </div>
     </div>
-</body>
-<footer>
+    <footer>
     
-</footer>
-<script src = '/js/main.js'></script>
+    </footer>
+</body>
+<script src = 'js/main.js'></script>
 </html>

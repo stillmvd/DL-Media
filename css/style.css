@@ -1,78 +1,88 @@
 /* ----------  щрифты  ---------- */
 
 @font-face {
-    font-family: OpenSans;
-    src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
-    font-family: OpenSans;
-    src: url(/fonts/OpenSans/OpenSans-SemiBold.ttf);
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
     font-weight: 500;
 }
 
-@font-face {
-    font-family: OpenSans;
-    src: url(/fonts/OpenSans/OpenSans-Bold.ttf);
-    font-weight: 600;
+/* ----------  стили  ---------- */
+
+html{
+    scrollbar-width: none;
 }
 
-/* ----------  основа  ---------- */
+html::-webkit-scrollbar{
+    width: 0px;
+}
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: OpenSans;
-}
-
-.container{
-    /* width: 1800px; */
-    width: 96%;
-    margin: auto;
+    font-family: Gilroy;
 }
 
 ::selection{
     background: #75b9f1;
 }
 
-header{
-    padding-bottom: 300px;
+body{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 96%;
+    margin: auto;
 }
 
-.nav{
+header{
     padding: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-body{
-    background-image: url(/img/bg.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+header img{
+    user-select: none;
 }
 
-.content{
+.bodyContent{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.content p{
-    margin-bottom: 280px;
-}
-
 .mainTxt{
+    margin-top: 300px;
+    margin-bottom: 300px;
     font-weight: 500;
     font-size: 48px;
     color: #40434C;
     text-align: center;
 }
 
-.tossing{
+.mainTxt1{
+    font-weight: 500;
+    margin-bottom: 140px;
+    font-size: 48px;
+    color: #40434C;
+    text-align: center;
+}
+
+.sliding{
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -96,62 +106,83 @@ body{
     margin-bottom: 6px;
 }
 
-.activites{
-    margin-top: 150px;
+.activities{
+    margin-top: 250px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.activites .mainTxt{
+.activities .mainTxt{
     margin-bottom: 150px;
 }
 
-.actBlocks{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.activity1, .activity2{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.activity2{
-    width: 80%;
-    margin: auto;
-}
-
-.activity{
+.activity1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 24px;
-    width: 420px;
-    padding: 60px 20px;
+    border-radius: 12px;
+    width: 360px;
+    padding: 50px 0px;
     margin-bottom: 50px;
-    transition: .1s ease-in;
+    transition: .1s ease;
+    border: solid 1px transparent;
 }
 
-.activity img{
-    width: 100px;
-    height: 100px;
+.activity2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    width: 360px;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+    transition: .1s ease;
+    border: solid 1px transparent;
+}
+
+.activityBlock1{
+    display: flex;
+    justify-content: space-around;
+    width: 1540px;
+    cursor: pointer;
+}
+
+.activityBlock2{
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    cursor: pointer;
+}
+
+.activity1 img, .activity2 img{
+    width: 80px;
+    height: 80px;
     margin-bottom: 15px;
-    transition: .1s;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
-.activity p{
-    font-size: 36px;
+.activityBlock1 p, .activityBlock2 p{
+    font-size: 28px;
     color: #40434C;
     text-align: center;
+    user-select: none;
 }
 
 /* ----------  события мыши  ---------- */
 
-.activity:hover{
-    box-shadow: 0px 5px 10px 0px rgb(201, 201, 201);
-    transform: translateY(-3px);
+.activity1:hover, .activity2:hover{
+    border: solid rgb(214, 214, 214) 1px;
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
 }
 
 /* ----------  медиа запросы  ---------- */
@@ -217,8 +248,29 @@ body{
         height: 80px;
     }
 
-    .tossing{
+    .sliding{
         width: 28px;
         height: 28px;
     }
+}
+
+/* ----------  анимации  ---------- */
+
+.sliding{
+	animation-name: sliding;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes sliding {
+	0% {
+		transform: translateY(-5px);	
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(-5px);	
+	}						
 }
