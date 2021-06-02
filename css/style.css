@@ -18,6 +18,12 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Semibold.ttf);
+    font-weight: 600;
+}
+
 /* ----------  стили  ---------- */
 
 html{
@@ -68,7 +74,7 @@ header img{
 .mainTxt{
     margin-top: 300px;
     margin-bottom: 300px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 48px;
     color: #40434C;
     text-align: center;
@@ -85,6 +91,10 @@ header img{
 .sliding{
     user-select: none;
     -webkit-user-drag: none;
+}
+
+.burger{
+    cursor: pointer;
 }
 
 .burger::after{
@@ -170,8 +180,8 @@ header img{
 }
 
 .activity1 img, .activity2 img{
-    width: 80px;
-    height: 80px;
+    width: 84px;
+    height: 84px;
     opacity: 84%;
     margin-bottom: 15px;
     user-select: none;
@@ -289,19 +299,30 @@ header img{
 
 .sliding{
 	animation-name: sliding;
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-	animation-duration: 2s;
 	animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes sliding {
 	0% {
-		transform: translateY(-5px);	
-	}
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+}
 	50% {
-		transform: translateY(5px);
-	}
+		transform: translateY(13px);
+		-webkit-transform: translateY(13px);
+		-moz-transform: translateY(13px);
+		-ms-transform: translateY(13px);
+		-o-transform: translateY(13px);
+}
 	100% {
-		transform: translateY(-5px);	
-	}						
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+}						
 }
