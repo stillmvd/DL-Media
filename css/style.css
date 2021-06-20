@@ -48,7 +48,7 @@ body{
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: 100%;
     width: 96%;
     margin: auto;
 }
@@ -62,35 +62,6 @@ header{
 
 header img{
     user-select: none;
-}
-
-.bodyContent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.mainTxt{
-    margin-top: 300px;
-    margin-bottom: 300px;
-    font-weight: 600;
-    font-size: 48px;
-    color: #40434C;
-    text-align: center;
-}
-
-.mainTxt1{
-    font-weight: 500;
-    margin-bottom: 140px;
-    font-size: 48px;
-    color: #40434C;
-    text-align: center;
-}
-
-.sliding{
-    user-select: none;
-    -webkit-user-drag: none;
 }
 
 .burger{
@@ -116,27 +87,56 @@ header img{
     margin-bottom: 6px;
 }
 
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    padding-top: 30vmin;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.mainTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 48px;
+    color: #40434C;
+    text-align: center;
+}
+
+.postTitle{
+    font-weight: 500;
+    font-size: 48px;
+    color: #40434C;
+    text-align: center;
+    padding-bottom: 10vmin;
+}
+
 .activities{
-    margin-top: 250px;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20vh;
 }
 
-.activities .mainTxt{
-    margin-bottom: 150px;
-}
-
-.activity1{
+.activity{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 360px;
     padding: 50px 0px;
-    margin-bottom: 50px;
+    margin: 14px 0px;
     transition: .1s ease;
     border: solid 1px transparent;
     position: relative;
@@ -146,25 +146,10 @@ header img{
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
-}
-
-.activity2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    padding: 50px 0px;
-    margin-bottom: 50px;
-    transition: .1s ease;
-    border: solid 1px transparent;
-    position: relative;
-    border-radius: 12px;
-    cursor: pointer;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    -webkit-transition: .1s ease;
+    -moz-transition: .1s ease;
+    -ms-transition: .1s ease;
+    -o-transition: .1s ease;
 }
 
 .activityBlock1{
@@ -179,7 +164,7 @@ header img{
     width: 1140px;
 }
 
-.activity1 img, .activity2 img{
+.activity img{
     width: 84px;
     height: 84px;
     opacity: 84%;
@@ -205,9 +190,70 @@ header img{
     user-select: none;
 }
 
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12vmin;
+}
+
+.worksBlock1{
+    
+}
+
+.workBlocks2{
+    
+}
+
+.cardCover{
+    width: 1540px;
+    height: 300px;
+    z-index: 20;
+    border-radius: 12px;
+    position: absolute;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.workCard{
+    position: relative;
+    width: 1540px;
+    height: 300px;
+    border: solid rgb(214, 214, 214) 1px;
+    margin-top: 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.cardImg{
+    opacity: 70%;
+    border-radius: 12px;
+    transition: .1s ease;
+    transform: scale(0.8);
+    user-select: none;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition: .1s ease;
+    -moz-transition: .1s ease;
+    -ms-transition: .1s ease;
+    -o-transition: .1s ease;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
 /* ----------  события мыши  ---------- */
 
-.activity1:hover, .activity2:hover{
+.activity:hover{
     border: solid rgb(214, 214, 214) 1px;
     transform: translateY(-4px);
     -webkit-transform: translateY(-4px);
@@ -216,10 +262,20 @@ header img{
     -o-transform: translateY(-4px);
 }
 
-.activity1:hover .img, .activity2:hover .img, .activity1:hover p, .activity2:hover p{
+.activity:hover .img, .img, .activity:hover p{
     color: #40434C;
     opacity: 100%;
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.cardCover:hover ~ .cardImg{
+    opacity: 100%;
+    transform: scale(1);
+    -webkit-filter:;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
