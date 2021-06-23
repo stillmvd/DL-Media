@@ -2,31 +2,31 @@
 
 @font-face {
     font-family: Gilroy;
-    src: url(../fonts/Gilroy/Gilroy-Light.ttf);
+    src: url(../fonts/Gilroy-Light.ttf);
     font-weight: 300;
 }
 
 @font-face {
     font-family: Gilroy;
-    src: url(../fonts/Gilroy/Gilroy-Regular.ttf);
+    src: url(../fonts/Gilroy-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: Gilroy;
-    src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
+    src: url(../fonts/Gilroy-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: Gilroy;
-    src: url(../fonts/Gilroy/Gilroy-Semibold.ttf);
+    src: url(../fonts/Gilroy-Semibold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: Gilroy;
-    src: url(../fonts/Gilroy/Gilroy-Black.ttf);
+    src: url(../fonts/Gilroy-Black.ttf);
     font-weight: 900;
 }
 
@@ -51,7 +51,7 @@ html::-webkit-scrollbar{
 }
 
 body{
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
@@ -146,12 +146,12 @@ header img{
     transition: .1s ease;
     box-shadow: 0px 0px 34px 0px rgb(240, 240, 240);
     position: relative;
-    border-radius: 12px;
+    border-radius: 9px;
     cursor: pointer;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
     -webkit-transition: .1s ease;
     -moz-transition: .1s ease;
     -ms-transition: .1s ease;
@@ -250,11 +250,11 @@ header img{
     transition: .2s ease;
     background-color: white;
     margin: 3vmin 0px;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
     -webkit-transition: .2s ease;
     -moz-transition: .2s ease;
     -ms-transition: .2s ease;
@@ -262,7 +262,7 @@ header img{
 }
 
 .cardImg{
-    border-radius: 12px;
+    border-radius: 9px;
     transition: .1s ease;
     transform: scale(1);
     user-select: none;
@@ -276,10 +276,10 @@ header img{
     -moz-transition: .1s ease;
     -ms-transition: .1s ease;
     -o-transition: .1s ease;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
 }
 
 .cardTextBlock{
@@ -415,11 +415,11 @@ header img{
     padding: 30px;
     width: 400px;
     box-shadow: 0px 0px 34px 0px rgb(240, 240, 240);
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
 }
 
 .sendMail{
@@ -593,11 +593,11 @@ label{
 .chess1 img, .chess2 img, .chess3 img{
     width: 700px;
     height: 440px;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
 }
 
 .chess1 p{
