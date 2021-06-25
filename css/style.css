@@ -24,12 +24,6 @@
     font-weight: 600;
 }
 
-@font-face {
-    font-family: Gilroy;
-    src: url(../fonts/Gilroy-Black.ttf);
-    font-weight: 900;
-}
-
 /* ----------  стили  ---------- */
 
 html{
@@ -51,10 +45,6 @@ html::-webkit-scrollbar{
 }
 
 body{
-    background-image: url(../img/bg.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
     width: 96%;
     margin: auto;
 }
@@ -96,15 +86,14 @@ header img{
 .welcome{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 30vh;
+    padding-top: 260px;
 }
 
 .arrow{
     width: 40px;
     height: 40px;
-    padding-top: 30vmin;
+    padding-top: 300px;
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -204,10 +193,6 @@ header img{
     padding-top: 15vmin;
 }
 
-.worksBlock1{
-    
-}
-
 .worksBlock2{
     display: none;
 }
@@ -223,7 +208,7 @@ header img{
 .showMoreBlocks{
     text-align: center;
     color: #aaaaaa;
-    margin: 20px 0px;
+    margin-top: 50px;
     cursor: pointer;
     user-select: none;
 }
@@ -262,20 +247,10 @@ header img{
 }
 
 .cardImg{
-    border-radius: 9px;
-    transition: .1s ease;
-    transform: scale(1);
     user-select: none;
     width: 600px;
     user-select: none;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transition: .1s ease;
-    -moz-transition: .1s ease;
-    -ms-transition: .1s ease;
-    -o-transition: .1s ease;
+    border-radius: 9px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
@@ -353,8 +328,8 @@ header img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 15vmin;
-    padding-bottom: 15vmin;
+    padding-top: 13vmin;
+    padding-bottom: 20vmin;
 }
 
 .request{
@@ -466,7 +441,7 @@ label{
     -o-border-radius: 4px;
 }
 
-.outside{
+.adds{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -476,146 +451,62 @@ label{
     margin: auto;
 }
 
-.addImgs1{
-    display: flex;
-    flex-direction: row;
-    width: 1340px;
-    justify-content: space-between;
-}
-
-.addImgs2{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.addImg1{
-    border-radius: 12px;
-    width: 60%;
-    height: 100%;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
-.txtImg1{
-    width: 34%;
-    height: 34%;
-}
-
-.txtImg1 p{
-    margin-top: 16px;
-    font-size: 24px;
-    color: #40434C;
-}
-
-.txtImg2 p{
-    font-size: 24px;
-    color: #40434C;
-}
-
-.txtImg2{
-    margin-top: -140px;
-    width: 48%;
-    height: 48%;
-}
-.txtImg4{
-    width: 46%;
-    height: 46%;
-}
-
-.txtImg4 p{
-    font-size: 24px;
-    margin-top: 6px;
-    color: #40434C;
-}
-
-.addImg2{
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
-.addImg3{
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    margin-top: 40px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
-.addImg4{
-    border-radius: 12px;
-    width: 100%;
-    height: 100%;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
-}
-
-.chess1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 90px;
-    width: 1340px;
-}
-
-.chess2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 90px;
-    width: 1340px;
-}
-
-.chess3{
+.righttotheLeft, .lefttotheRight{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     width: 1340px;
+    margin-bottom: 84px;
 }
 
-.chess1 img, .chess2 img, .chess3 img{
+.miniGallery{
     width: 700px;
-    height: 440px;
     border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
 }
 
-.chess1 p{
-    text-align: justify;
-    width: 600px;
-    font-size: 28px;
+.galleryPic{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    transition: .1s ease;
+    opacity: 94%;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    -webkit-transition: .1s ease;
+    -moz-transition: .1s ease;
+    -ms-transition: .1s ease;
+    -o-transition: .1s ease;
 }
 
-.chess2 p{
+.outsideSubtitle{
     text-align: justify;
     width: 600px;
-    font-size: 28px;
+    font-size: 22px;
+    color: #777777;
 }
 
-.chess3 p{
-    text-align: justify;
-    width: 600px;
-    font-size: 28px;
+.outsideText{
+    display: flex;
+    flex-direction: column;
+}
+
+.outsideTitle{
+    font-size: 32px;
+    font-weight: 500;
+    color: #40434C;
+    margin-bottom: 20px;
 }
 
 /* ----------  события мыши  ---------- */
@@ -640,12 +531,12 @@ label{
 }
 
 .workCard:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: 0px 0px 34px 0px rgb(221, 221, 221);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -o-transform: scale(1.03);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 
 .newPageLink:hover .showMore{
@@ -656,6 +547,14 @@ label{
 .inputForm:focus{
     outline: none;
     border: 1px solid #499fe6;
+}
+
+.galleryPic:hover{
+    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
 }
 
 /* ----------  медиа запросы  ---------- */
