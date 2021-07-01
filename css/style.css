@@ -93,7 +93,7 @@ header img{
 .arrow{
     width: 40px;
     height: 40px;
-    padding-top: 300px;
+    padding-top: 32vmin;
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -564,7 +564,7 @@ label{
         font-size: 40px;
     }
 
-    .activity1, .activity2{
+    .activityBlock1, .activityBlock2{
         flex-wrap: wrap;
     }
     
@@ -576,19 +576,18 @@ label{
         width: 130px;
         height: 130px;
     }
+    
+    .arrow{
+        padding-top: 30vmin;
+    }
 }
 
 @media screen and (max-width: 1100px){
-    .mainTxt{
+    .mainTitle{
         font-size: 30px;
     }
 
-    .tossing{
-        width: 34px;
-        height: 34;
-    }
-
-    .activity1, .activity2{
+    .activityBlock1, .activityBlock2{
         flex-wrap: wrap;
     }
 
@@ -600,14 +599,18 @@ label{
         width: 110px;
         height: 110px;
     }
+
+    .arrow{
+        padding-top: 28vmin;
+    }
 }
 
 @media screen and (max-width: 530px){
-    .mainTxt{
-        font-size: 22px;
+    .mainTitle{
+        font-size: 40px;
     }
 
-    .activity1, .activity2{
+    .activityBlock1, .activityBlock2{
         flex-wrap: wrap;
     }
 
@@ -620,11 +623,11 @@ label{
         height: 80px;
     }
 
-    .sliding{
+    .arrow{
         width: 28px;
         height: 28px;
+        padding-top: 24vmin;
     }
-}
 
 /* ----------  анимации  ---------- */
 
@@ -655,5 +658,6 @@ label{
 		-moz-transform: translateY(0px);
 		-ms-transform: translateY(0px);
 		-o-transform: translateY(0px);
-}						
+}
+}
 }
